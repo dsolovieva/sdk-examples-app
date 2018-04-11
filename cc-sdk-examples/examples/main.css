@@ -1,0 +1,237 @@
+:root {
+    --layout-width-lg: 1200px;
+
+    --color-link: #2196F3;
+    --color-link-hover: #0F7FD7;
+    --color-white: #fff;
+    --color-text: #454545;
+    --color-text-light: #777;
+
+    --color-waring-light: #fff5e3;
+    --color-waring-dark: #ecb161;
+
+    --color-gray-light: #efefef;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.385;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+}
+div {
+    box-sizing: border-box;
+}
+a {
+    color: var(--color-link);
+}
+    a:hover {
+        color: var(--color-link-hover);
+    }
+
+.button {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid var(--color-link);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--color-link);
+}
+    .button:hover {
+        background-color: var(--color-link);
+        color: var(--color-white);
+    }
+
+.header {
+    max-width: var(--layout-width-lg);
+    margin: 0 auto;
+    padding: 20px;
+}
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: #555;
+    }
+
+.hero {
+    position: relative;
+    min-height: 400px;
+    background-image: url('../../assets/images/Hero-Acura-TLX.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+    .hero--gtm {
+        background-image: url('../../assets/images/Hero-Tag-Manager.jpg');
+        background-position: center center;
+    }
+    .hero::after {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .25);
+    }
+    .hero__info {
+        z-index: 2;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        max-width: var(--layout-width-lg);
+        margin: 0 auto 0 -600px;
+        color: var(--color-white);
+        text-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    }
+    .hero__title {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .hero__text {
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+@media (max-width: 1200px) {
+    .hero {
+        min-height: 200px;
+    }
+    .hero::after {
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .hero__info {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 20px 20px 40px;
+    }
+    .hero__title {
+        margin-bottom: 16px;
+        font-size: 36px;
+        line-height: 1.75;
+    }
+    .hero__text {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+
+.main {
+    max-width: var(--layout-width-lg);
+    margin: 0 auto;
+}
+.main > h2 {
+    margin: 1em 0 .5em;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .main {
+        padding: 0 10%;
+    }
+    .main > h2 {
+        text-align: left;
+    }
+}
+
+.vehicles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
+    padding-bottom: 40px;
+}
+.vehicle__info > h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+    .vehicle__info > h3 > a {
+        color: var(--color-text);
+        border-bottom: 1px solid var(--color-text-light);
+        text-decoration: none;
+    }
+    .vehicle__info > h3 > a:hover {
+        color: var(--color-link-hover);
+        border-bottom: 1px solid var(--color-link-hover);
+    }
+    .vehicle__picture {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .vehicle__picture > img {
+        width: 200px;
+        max-width: 100%;
+    }
+@media (max-width: 1200px) {
+    .vehicles {
+        display: block;
+    }
+    .vehicle {
+        display: flex;
+        margin-bottom: 32px;
+    }
+}
+.vehicle__params {
+    margin: 16px 0;
+    padding: 0;
+    list-style: none;
+}
+    .vehicle__params-item {
+        font-size: 14px;
+        color: var(--color-text-light);
+    }
+    .vehicle__params-item > span {
+        color: var(--color-text);
+    }
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 64px;
+    margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+    .reviews {
+        display: block;
+    }
+}
+.review {
+    font-size: 16px;
+    line-height: 1.5;
+}
+    .review > h3 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+
+.footer {
+    padding: 40px;
+    font-size: 14px;
+    background-color: var(--color-gray-light);
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.links__link {
+    font-size: 16px;
+    font-weight: bold;
+}
+    .links__link > a {
+        color: var(--color-link);
+    }
+
+.comment {
+    margin: 20px 0 0;
+    padding: 20px;
+    background-color: var(--color-waring-light);
+    border: 1px solid var(--color-waring-dark);
+    border-radius: 2px;
+}

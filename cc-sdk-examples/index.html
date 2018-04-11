@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widgets Test Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+      iframe {
+        width: 100%;
+        height: 635px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      pre code {
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="d-flex justify-content-start m-4">
+      <h1><a href="#">CarCode SDK Examples</a></h1>
+    </header>
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2">
+          <button class="btn btn-link d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#cc-docs-nav" aria-controls="cc-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg></button>
+          <ul class="d-md-block nav flex-column collapse" id="cc-docs-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#0">Getting Started</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#1">SDK buttons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#2">SDK buttons in SPA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#3">Theme configuration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#4">SMS form</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#5">API usage</a>
+            </li>
+          </ul>
+        </div>
+        <main class="col-12 col-md-9 col-xl-8">
+          <h2 id="exampleTitle"></h2>
+          <iframe 
+            id="exampleFrame"
+            frameborder="false">
+          </iframe>
+          <pre>
+            <code id="exampleCode" class="pt-3 pb-3">
+            </code>
+          </pre>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
