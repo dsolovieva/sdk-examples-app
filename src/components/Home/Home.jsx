@@ -15,6 +15,10 @@ class Home extends Component {
             <Nav vertical>
               <Link className="nav-link" to="/getting-started">Getting started</Link>
               <Link className="nav-link" to="/sdk-buttons">SDK Buttons</Link>
+              <Link className="nav-link" to="/spa-sdk-buttons">SPA with SDK Buttons</Link>
+              <Link className="nav-link" to="/sms-form">SMS form configuration</Link>
+              <Link className="nav-link" to="/theme-config">Theme configuration</Link>
+              <Link className="nav-link" to="/sdk-api">Usage of public API</Link>
             </Nav>
             </Col>
             <Col md="9" xl="8">

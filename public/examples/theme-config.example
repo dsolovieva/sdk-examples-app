@@ -1,0 +1,22 @@
+window.__carcode = {
+    themeConfiguration: {
+        formBackgroundColor: '#f3f3f3',
+        formLightBackgroundColor: '#ffffff',
+        formLightColor: '#555555',
+        formTextColor: '#999999',
+        separatorColor: '#e8ede8',
+        backgroundButtonColor: '#007EE5',
+        buttonColor: '#ffffff',
+        fontSize: '16px',
+        fontFamily: '\'Roboto\', \'Open Sans\', \'Arial\', \'Helvetica\', \'sans-serif\'',
+        formButtonBackgroundColor: '#007EE5',
+        dotColor: '#f3f3f3',
+        formBoxShadow: 'rgba(85,85,85,0.5)',
+        chatReplyMessageBackground: '#ffffff',
+        chatMessageBackground: '#e3eaec',
+        scrollBarColor: '#c1c1c1',
+        scrollBarBackground: '#e9e9e9',
+        inventoryPrimaryLightColor: '#999999',
+        inventoryPrimaryDarkColor: '#555555', 
+    }
+};

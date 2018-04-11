@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/styles/hljs';
 
+
 class ExampleSource extends Component {
   constructor() {
     super();
@@ -13,7 +14,11 @@ class ExampleSource extends Component {
   componentDidMount() {
 		this.readTextFile(this.props.url);
   }
-  
+
+  componentWillReceiveProps(nextProps) {
+		this.readTextFile(nextProps.url);
+  }
+
   readTextFile = file => {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
@@ -31,6 +36,7 @@ class ExampleSource extends Component {
   };
 
   render() {  
+    
     return (
         <SyntaxHighlighter language='html' style={docco}>{this.state.text}</SyntaxHighlighter>
     );
