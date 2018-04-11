@@ -1,0 +1,10 @@
+.Example {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+@media (min-width: 992px) {
+  .Example {
+    height: 96vh;
+  }
+}

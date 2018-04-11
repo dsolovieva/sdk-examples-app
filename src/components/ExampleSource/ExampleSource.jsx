@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/styles/hljs';
-
+import './ExampleSource.css';
 
 class ExampleSource extends Component {
   constructor() {
@@ -36,9 +36,8 @@ class ExampleSource extends Component {
   };
 
   render() {  
-    
     return (
-        <SyntaxHighlighter language='html' style={docco}>{this.state.text}</SyntaxHighlighter>
+        <SyntaxHighlighter className="ExampleSource m-0"  style={docco}>{this.state.text}</SyntaxHighlighter>
     );
   }
 }

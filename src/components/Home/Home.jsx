@@ -1,27 +1,28 @@
-import React, { Component, Fragment } from 'react';
-import { HashRouter as Router, Route, Link, Redirect } from "react-router-dom";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/styles/hljs';
+import React, { Component } from 'react';
+import { Route, Link, Redirect } from "react-router-dom";
 import Example from '../Example/Example';
-import { Container, Row, Col, Nav, NavLink } from 'reactstrap';
+import { Container, Row, Col, Nav } from 'reactstrap';
 
 class Home extends Component {
 
   render() {  
     return (
-      <Container fluid>
+      <Container fluid className="mt-3">
           <Row>
-            <Col md='3' xl='2'>
-            <Nav vertical>
-              <Link className="nav-link" to="/getting-started">Getting started</Link>
-              <Link className="nav-link" to="/sdk-buttons">SDK Buttons</Link>
-              <Link className="nav-link" to="/spa-sdk-buttons">SPA with SDK Buttons</Link>
-              <Link className="nav-link" to="/sms-form">SMS form configuration</Link>
-              <Link className="nav-link" to="/theme-config">Theme configuration</Link>
-              <Link className="nav-link" to="/sdk-api">Usage of public API</Link>
-            </Nav>
+            <Col sm="12" md='2'>
+              <h1 className="App-title">CarCode SDK Examples</h1>
+              <Nav vertical className="App-nav">
+                <Link className="nav-link pl-0" to="/getting-started">Getting started</Link>
+                <Link className="nav-link pl-0" to="/sdk-buttons">SDK Buttons</Link>
+                <Link className="nav-link pl-0" to="/spa-sdk-buttons">SPA with SDK Buttons</Link>
+                <Link className="nav-link pl-0" to="/sms-form">SMS form configuration</Link>
+                <Link className="nav-link pl-0" to="/theme-config">Theme configuration</Link>
+                <Link className="nav-link pl-0" to="/sdk-api">Usage of public API</Link>
+              </Nav>
+              <hr />
+              <a href="">Full sources</a>
             </Col>
-            <Col md="9" xl="8">
+            <Col sm="12" md="10">
               <Route exact path="/" render={() => (
                   <Redirect to="/getting-started"/>
               )}/>
