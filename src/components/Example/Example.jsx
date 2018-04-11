@@ -6,8 +6,8 @@ class Example extends Component {
   render() {
     return (
       <Fragment>
-        <ExampleResult src={`${process.env.PUBLIC_URL}/examples/${this.props.match.params.example || 'getting-started'}/index.html`} />
-        <ExampleSource url={`${process.env.PUBLIC_URL}/examples/${this.props.match.params.example || 'getting-started'}/code.html`} />
+        <ExampleResult src={`/cc-sdk-examples/${this.props.match.params.example}/index.html`} />
+        <ExampleSource url={`${process.env.PUBLIC_URL}/examples/${this.props.match.params.example}.example`} />
       </Fragment>
     );
   }
