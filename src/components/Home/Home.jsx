@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link, Redirect } from "react-router-dom";
 import Example from '../Example/Example';
 import { Container, Row, Col, Nav } from 'reactstrap';
+import { ExternalLink } from 'react-feather';
 
 class Home extends Component {
 
@@ -20,7 +21,9 @@ class Home extends Component {
                 <Link className="nav-link pl-0" to="/sdk-api">Usage of public API</Link>
               </Nav>
               <hr />
-              <a href="">Full sources</a>
+              <a href="https://github.com/dsolovieva/cc-sdk-examples">
+                <ExternalLink /><span class="align-text-bottom pl-1">All sources</span>
+              </a>
             </Col>
             <Col sm="12" md="10">
               <Route exact path="/" render={() => (
