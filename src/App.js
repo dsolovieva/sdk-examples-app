@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/styles/hljs';
 import Example from './components/Example/Example';
@@ -25,6 +25,9 @@ class App extends Component {
             </Nav>
             </Col>
             <Col md="9" xl="8">
+              <Route exact path="/" render={() => (
+                  <Redirect to="/getting-started"/>
+              )}/>
               <Route path="/:example" component={Example} />
             </Col>
           </Row>
