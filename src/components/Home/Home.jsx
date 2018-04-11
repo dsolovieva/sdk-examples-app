@@ -18,9 +18,9 @@ class Home extends Component {
             </Nav>
             </Col>
             <Col md="9" xl="8">
-              {/* <Route exact path="/" render={() => (
+              <Route exact path="/" render={() => (
                   <Redirect to="/getting-started"/>
-              )}/> */}
+              )}/>
               <Route path="/:example" component={Example} />
             </Col>
           </Row>
