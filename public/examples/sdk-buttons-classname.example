@@ -1,0 +1,24 @@
+<head>
+  <script>
+    window.__carcode = {
+      /* Do not attach default floating button to page */
+      sdkButtonClassname: 'smsbutton'
+    }
+  </script>
+  <!-- Install default CarCode script -->
+  <script src='https://dev-dsg11-www.carcodesms.com/widgets/s/[WIDGET_ID].js' type='text/javascript' async defer></script>
+</head>
+<body>
+  <!-- ... -->
+  <!-- Add button(s) to VDPs (vehicle details page) or SRPs (vehicle search results pages) -->
+  <button class="smsbutton">
+    Text us
+  </button>
+  <button class="smsbutton">
+    Text us
+  </button>
+  <button class="smsbutton">
+    Text us
+  </button>
+  <!-- ... -->
+</body>
